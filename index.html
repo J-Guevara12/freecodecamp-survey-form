@@ -2,66 +2,75 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>This is a survey</title>
+  <meta charset="UTF-8" />
+  <link href="styles/scss/style.css" rel="stylesheet" />
+  <title>This is a survey</title>
 </head>
 
 <body>
-	<div id="card-body">
-		<div id="card-header">
-			<h1 id="title">Your camping experience</h1>
-		</div>
-		<div id="card-body">
-			<p id="description">Please tell us about how you felt in your camping, feel completely free to say what you want,
-				your data is only collected for statistical purposes.</p>
-			<form id="survey-form">
-				<label id="name-label" for="name">name:</label>
-				<input id="name" type="text" placeholder='name' required>
-				<br>
-				<label id="email-label" for="email">email:</label>
-				<input id="email" type="email" placeholder='email' required>
-				<br>
-				<label id="number-label" for="number">age:</label>
-				<input type='number' id="number" min='0' max='120' placeholder='age'>
-				<br>
-				<select id="dropdown" type="dropdown">
-					<option id="op1" value="">1</option>
-					<option id="op2" value="">2</option>
-					<option id="op3" value="">3</option>
-					<option id="op4" value="">4</option>
-				</select>
-				<br>
-				<input id="opt1" value='1' type="radio" name="radio">
-				<label for="opt1">1</label>
-				<input id="opt2" value='2' type="radio" name="radio">
-				<label for="opt2">2</label>
-				<input id="opt3" value='3' type="radio" name="radio">
-				<label for="opt3">3</label>
-				<input id="opt4" value='4' type="radio" name="radio">
-				<label for="opt4">4</label>
-				<input id="opt5" value='5' type="radio" name="radio">
-				<label for="opt5">5</label>
-				<br>
-				<input id="opc1" type="checkbox" value="1">
-				<label for="opc1">1</label>
-				<input id="opc2" type="checkbox" value="2">
-				<label for="opc2">2</label>
-				<input id="opc3" type="checkbox" value="3">
-				<label for="opc3">3</label>
-				<input id="opc4" type="checkbox" value="4">
-				<label for="opc4">4</label>
-				<input id="opc5" type="checkbox" value="5">
-				<label for="opc5">5</label>
-				<br>
-				<textarea id="textarea" name="" cols="30" rows="10"></textarea>
-				<br>
-				<input id="submit" type="submit">
-			</form>
-		</div>
-	</div>
+  <div id="card">
+    <div id="card-header">
+      <h1 id="title">Your camping experience</h1>
+      <p id="description">
+        Please tell us about how you felt in your camping, feel completely
+        free to say what you want, your data is only collected for statistical
+        purposes.
+      </p>
+    </div>
+    <div id="card-body">
+      <form id="survey-form">
+        <div id="name-div" class="question">
+          <label id="name-label" for="name">name:</label>
+          <input id="name" type="text" placeholder="name" required />
+        </div>
+        <div id="email-div" class="question">
+          <label id="email-label" for="email">email:</label>
+          <input id="email" type="email" placeholder="email" required />
+        </div>
+        <div id="age-div" class="question">
+          <label id="number-label" for="number">age:</label>
+          <input type="number" id="number" min="0" max="120" placeholder="age" />
+        </div>
+        <div id="dropdown-div" class="question">
+          <p>select your camping service</p>
+          <select id="dropdown" type="dropdown">
+            <option id="op1" value="">Basic</option>
+            <option id="op2" value="">Pro-basic</option>
+            <option id="op3" value="">Premium</option>
+            <option id="op4" value="">Extra-premium</option>
+          </select>
+        </div>
+        <div id="radio-div" class="question">
+          <p>Rate our services:</p>
+          <div id="radio-divs">
+            <input id="opt1" value="1" type="radio" name="radio" />
+            <label for="opt1">1</label>
+            <input id="opt2" value="2" type="radio" name="radio" />
+            <label for="opt2">2</label>
+            <input id="opt3" value="3" type="radio" name="radio" />
+            <label for="opt3">3</label>
+            <input id="opt4" value="4" type="radio" name="radio" />
+            <label for="opt4">4</label>
+            <input id="opt5" value="5" type="radio" name="radio" />
+            <label for="opt5">5</label>
+          </div>
+        </div>
+        <div id="checkbox-div" class="question">
+          <p>Tell us what of the following services you used:</p>
+          <label for="opc1"><input id="opc1" type="checkbox" value="1" />Community kitchen</label>
+          <label for="opc2"><input id="opc2" type="checkbox" value="2" />Lake's boat</label>
+          <label for="opc3"><input id="opc3" type="checkbox" value="3" />Private storage room</label>
+          <label for="opc4"><input id="opc4" type="checkbox" value="4" />Bird watching trail</label>
+          <label for="opc5"><input id="opc5" type="checkbox" value="5" />Simulated survival classes</label>
+        </div>
+        <textarea id="textarea" name="" cols="30" rows="10"></textarea>
+        <div id="submit-div" class="question"><input id="submit" type="submit" value="SEND" /></div>
+      </form>
+    </div>
+  </div>
+  <p id="credits">Made By Juan Esteban Guevara</p>
 
-
-	<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,141 @@
+//Add external fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+
+//Declare variables
+$font1: "Poppins", sans-serif;
+$font2: "Nanum Gothic", sans-serif;
+$color1: #222831;
+$color2: #393e46;
+$color3: #00adb5;
+$color3v: #00797e;
+$fontcolor: #eeeeee;
+
+body {
+  font-family: $font1;
+  background-color: $color1;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  color: $fontcolor;
+  box-sizing:border-box;
+}
+p {
+  width: 100%;
+  text-align:justify;
+}
+h1 {
+  font-size: 90px;
+  text-align: center;
+  color:$color3;
+}
+select {
+  width: 30%;
+  height:35px;
+  border:1px solid $color3;
+  font-size: 30px;
+  font-family:$font1;
+  background-color: $color1;
+  color:$fontcolor;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  transition: width 0.1s ease-in-out;
+}
+select:focus{
+  box-shadow:0px 0px 10px 6px $color3;
+  width:80%;
+  border:2px solid $color3;
+}
+[type="checkbox"]
+{
+  vertical-align:middle;
+  margin-right:20px;
+}
+label{
+  margin-left:5px;
+}
+input{
+  height:inherit;
+  font-size:30px;
+  background-color:$color1;
+  border:1px solid $color3;
+}
+input[type=text],input[type=email],input[type=number] {
+  width: 33%;
+  padding: 5px;
+  color:$color3;
+  text-justify:center;
+  transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus,input[type=email]:focus,input[type=number]:focus{
+  color: $fontcolor;
+  border:2px solid $color3;
+  box-shadow:0px 0px 10px 6px $color3;
+  width:100%;
+}
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 4px solid $color3;
+  background-color: $color2;
+  resize: none;
+  font-size:20px;
+  font-family:inherit;
+  color:inherit;
+}
+::placeholder{
+  color:$color3v;
+}
+.question{
+  display: flex;
+  flex-direction:column;
+  margin:0px 0px 20px 0px;
+}
+#dropdown-div{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+#card {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  background-color: $color2;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 5px $color3;
+}
+#credits {
+  font-size: 10px;
+  text-align:center;
+  color:$color2;
+}
+#radio-divs{
+  width:40%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+}
+#submit{
+  background-color: $color1;
+  color:$color3;
+  border:none;
+  border-radius:10px;
+  align-self:center;
+  margin-bottom:30px;
+  margin-top:20px;
+  transition-property: background-color,color,box-shadow;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+#submit:hover{
+  background-color:$color3;
+  color:$color1;
+  box-shadow: 0px 0px 10px 6px $color3;
+}
